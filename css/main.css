@@ -7,6 +7,7 @@ body{background:black;}
   height: 500px;
   border-top: 10px solid red;
   border-bottom: 10px solid red;
+  margin-bottom:100px;
 }
 
 .ryu{width:450px; float:left;}

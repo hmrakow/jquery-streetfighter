@@ -35,23 +35,19 @@ $(document).ready(function() {
   $('#hadouken-sound')[0].play();
 }
 
- /*$(document).keydown(function(e) {
-    if (e.keyCode == 88) {
-      $('.ryu-action').hide();
-      $('.ryu-cool').show();
-    }
-  })*/
 
 $(document).keydown(function( event ) {
   if ( event.which == 88 ) {
 	$('.ryu-ready').hide();
-      $('.ryu-cool').show();
+	$('.ryu-still').hide();
+    $('.ryu-cool').show();
   }
 })
 .keyup(function(e) {
     if (e.keyCode == 88) {
       $('.ryu-cool').hide();
-      $('.ryu-still').show();
+	  $('.ryu-still').hide();
+      $('.ryu-ready').show();
     }
   });
 });
